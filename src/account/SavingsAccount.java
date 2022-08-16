@@ -65,4 +65,15 @@ public class SavingsAccount {
     public String getModeOfOperation() {
         return modeOfOperation;
     }
+
+    public double retrieveBalance(){
+        return getAvailableBalance();
+    }
+    public double creditCash(double amount){
+        availableBalance = availableBalance + amount;
+        return availableBalance;
+    }
+    public double debitCash(double amount){
+        return availableBalance - amount;
+    }
 }
